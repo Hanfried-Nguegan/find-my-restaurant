@@ -20,7 +20,7 @@ export const RestaurantCard = ({ restaurants }: any) => {
                 />
               </div>
               <div className="flex flex-col space-y-2">
-                <p className="text-white text-xl font-bold">
+                <p className="text-white text-xl md:text-2xl font-bold">
                   {restaurant.name}
                 </p>
                 <div className="flex items-center space-x-2">
@@ -40,17 +40,29 @@ export const RestaurantCard = ({ restaurants }: any) => {
             </div>
             <div className="flex items-center justify-between mt-1">
               <div className="flex flex-col items-start">
-                <div className="font-semibold text-lg">{restaurant.location.distance} mi</div>
-                <p className="text-gray-500 text-[16px]">Away</p>
+                <div className="font-semibold text-lg md:text-xl">
+                  {restaurant.location.distance} mi
+                </div>
+                <p className="text-gray-500 text-base md:text-lg">Away</p>
               </div>
               <div className="flex flex-col items-center">
-                <div className="font-semibold text-lg">${restaurant.average_price}</div>
-                <p className="text-gray-500 text-[16px]">Minimum</p>
+                <div className="font-semibold text-lg md:text-xl">
+                  ${restaurant.average_price}
+                </div>
+                <p className="text-gray-500 text-base md:text-lg">Minimum</p>
               </div>
               <div className="flex flex-col items-center">
-                <div className="font-semibold text-lg">${restaurant.delivery_fee}</div>
-                <p className="text-gray-500 text-[16px]">Delivery Fee</p>
+                <div className="font-semibold text-lg md:text-xl">
+                  ${restaurant.delivery_fee}.00
+                </div>
+                <p className="text-gray-500 text-base md:text-lg">
+                  Delivery Fee
+                </p>
               </div>
+            </div>
+            <div className="flex items-center justify-between mt-2">
+                <p className="text-red-500 text-xl font-semibold">Schedule Delivery For:</p>
+                <p className="text-lg">{restaurant.delivery_at}</p>
             </div>
           </div>
         </div>

@@ -17,7 +17,7 @@ const RestaurantPage = ({restaurants}:RestaurantPageProps) => {
         </div>
       </div>
       <div className=' max-w-7xl mx-auto px-4'>
-        <p className='mt-6 text-xl md:text-2xl text-black text-opacity-75 font-medium'> Restaurants Near 232 Willow Ave, 07030 </p>
+        <p className='mt-6 text-xl md:text-2xl text-black text-opacity-75 font-medium'> 6 Restaurants Near 232 Willow Ave, 07030 </p>
         <p className='mt-6 text-lg md:text-xl text-black text-opacity-75 font-normal'>Available for Scheduled Orders</p>
         <p className='mt-1 text-gray-400 text-sm md:text-[16px]'>Schedule an order for when the restaurant is open</p>
         <RestaurantCard restaurants={restaurants}/>
