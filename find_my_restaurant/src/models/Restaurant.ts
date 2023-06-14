@@ -1,7 +1,8 @@
 export default interface IRestaurant {
-    id: number;
-    name: string;
-    logo_url: string
+    id: number
+    name: string
+    banner_url: string
+    logo_url:string
     ratings: {
       overall_rating:number
       star_rating: number

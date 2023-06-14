@@ -8,7 +8,7 @@ module.exports = {
         pinkychoco: "#F4A4AB",
         pinkyhard: "#FA6D7A",
         yellowishBackground: "#F7DF9B",
-      }
+      },
     },
   },
   variants: {
