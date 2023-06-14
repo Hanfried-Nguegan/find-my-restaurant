@@ -6,7 +6,8 @@ module.exports = {
     extend: {
       colors: {
         pinkychoco: "#F4A4AB",
-        pinkyhard: "#FA6D7A"
+        pinkyhard: "#FA6D7A",
+        yellowishBackground: "#F7DF9B",
       }
     },
   },

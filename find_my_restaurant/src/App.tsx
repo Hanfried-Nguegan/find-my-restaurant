@@ -1,18 +1,21 @@
 import React from "react";
-import { Navbar, Hero } from "./components";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Navbar, Hero, Restaurant } from "./components";
+import { merchant } from "./constants";
 
-function App() {
+const App = () => {
+
   return (
-    <>
+    <Router>
       <div className="bg-pinkychoco w-full h-screen">
-        {/* Navbar */}
         <Navbar />
-
-        {/* Hero */}
-        <Hero />
+        <Routes>
+          <Route path="/" element={<Hero/>}/>     
+          <Route path="/restaurant" element={ <Restaurant restaurants={merchant}/>}/>
+        </Routes>
       </div>
-    </>
+    </Router>
   );
-}
+};
 
 export default App;
