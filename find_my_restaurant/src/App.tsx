@@ -1,17 +1,17 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Navbar, Hero, Restaurant } from "./components";
-import { merchant } from "./constants";
 
 const App = () => {
+  
 
   return (
     <Router>
-      <div className="bg-pinkychoco w-full h-screen">
+      <div className=" bg-blue-950 w-full h-screen">
         <Navbar />
         <Routes>
-          <Route path="/" element={<Hero/>}/>     
-          <Route path="/restaurant" element={ <Restaurant restaurants={merchant}/>}/>
+          <Route path="/" element={<Hero />}/>     
+          <Route path="/restaurant" element={ <Restaurant />}/>
         </Routes>
       </div>
     </Router>

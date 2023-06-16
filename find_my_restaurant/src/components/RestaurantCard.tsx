@@ -1,11 +1,13 @@
 import React from "react";
 
-export const RestaurantCard = ({ restaurants }: any) => {
+// I was confused, hence the use of any type ;
+
+export const RestaurantCard = ({ restaurants }:any) => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-6 cursor-pointer">
       {restaurants.map((restaurant: any) => (
         <div key={restaurant.id} className="flex flex-col items-center">
-          <div className="relative [300px] min-h-auto lg:w-[400px]  ">
+          <div className="relative   ">
             <img
               src={restaurant.banner_url}
               alt="restaurant banner"
@@ -31,7 +33,8 @@ export const RestaurantCard = ({ restaurants }: any) => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col mt-2 w-full">
+          <div className="flex flex-col w-full">
+            {/* Card Rating */}
             <div className="flex justify-start space-x-1">
               <p className="">⭐⭐⭐⭐</p>
               <p className="text-gray-500">
@@ -60,9 +63,9 @@ export const RestaurantCard = ({ restaurants }: any) => {
                 </p>
               </div>
             </div>
-            <div className="flex items-center justify-between mt-2">
-                <p className="text-red-500 text-xl font-semibold">Schedule Delivery For:</p>
-                <p className="text-lg">{restaurant.delivery_at}</p>
+            <div className="flex items-center justify-between mt-2 mb-6">
+                <p className="text-red-500 text-lg font-semibold">Schedule Delivery For:</p>
+                <p className=" text-base opacity-75">{restaurant.delivery_at}</p>
             </div>
           </div>
         </div>
