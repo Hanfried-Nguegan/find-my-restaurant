@@ -45,7 +45,7 @@ const SearchBar: React.FC = () => {
           <GpsNotFixedIcon sx={{ color: "#e74222" }} />
           <input
             type="text"
-            placeholder="Enter an address to search"
+            placeholder="Enter Location eg. 240 Kent Ave"
             value={address}
             onChange={handleAddress}
             className="flex-1 text-left font-[360] text-lg outline-none"
