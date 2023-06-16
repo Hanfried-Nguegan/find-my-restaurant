@@ -14,7 +14,7 @@ const RestaurantPage = () => {
 
   useEffect(() => {
     const filteredRestaurants = merchant.filter(
-      (m: IRestaurant) => m.location.street === address
+      (m: IRestaurant) => m.location.street.toLowerCase() === address.toLowerCase()
     );
     setRestaurants(filteredRestaurants);
     if (filteredRestaurants.length > 0) {

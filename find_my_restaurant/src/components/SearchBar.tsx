@@ -10,6 +10,8 @@ const SearchBar: React.FC = () => {
   const [snackbarOpen, setSnackbarOpen] = useState<boolean>(false);
   const navigate = useNavigate();
 
+  // Filter the restaurants that match the address
+
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const searchParams = new URLSearchParams();
