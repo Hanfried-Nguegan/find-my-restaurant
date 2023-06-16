@@ -35,8 +35,8 @@ export const RestaurantCard = ({ restaurants }:any) => {
           </div>
           <div className="flex flex-col w-full">
             {/* Card Rating */}
-            <div className="flex justify-start space-x-1">
-              <p className="">⭐⭐⭐⭐</p>
+            <div className="flex items-center justify-start space-x-1 mt-1">
+              <p className="">⭐ <span className="text-black opacity-80 font-medium">{restaurant.ratings.num_rating}.0</span></p>
               <p className="text-gray-500">
                 ({restaurant.ratings.overall_rating})
               </p>

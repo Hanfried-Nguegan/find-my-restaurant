@@ -33,7 +33,7 @@ export const merchant: IRestaurant[] = [
         ratings:{
             overall_rating: 85,
             star_rating: 5,
-            num_rating: 5,
+            num_rating: 4,
         },
         cuisines: ["Italian","Spanish","American"],
         price_rating: 4,
@@ -56,7 +56,7 @@ export const merchant: IRestaurant[] = [
         ratings:{
             overall_rating: 152,
             star_rating: 5,
-            num_rating: 5,
+            num_rating: 3,
         },
         cuisines: ["Italian","Spanish","American"],
         price_rating: 4,
@@ -103,7 +103,7 @@ export const merchant: IRestaurant[] = [
         ratings:{
             overall_rating:1468,
             star_rating:5,
-            num_rating:5,
+            num_rating:4,
         },
         cuisines : ["Italian","American","Mexican"],
         price_rating:4,
@@ -126,7 +126,7 @@ export const merchant: IRestaurant[] = [
         ratings: {
             overall_rating:615,
             star_rating:5,
-            num_rating:5,
+            num_rating:3,
         },
         cuisines:["Greque","American","Barbecue"],
         price_rating:4,
